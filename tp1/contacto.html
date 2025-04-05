@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <h1>Contactanos!!</h1>
+        <p>¡Déjanos tu mensaje y nos pondremos en contacto a la brevedad!</p>
+    </header>
+    <form action="." method="get" class="formulario-contacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required/>
+        <br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" name="apellido" id="apellido" required/>
+        <br>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" name="email" id="email" required/>
+        <br>
+        <label for="celular">Celular(opcional):</label>
+        <input type="tel" id="celular" name="celular">
+        <br>
+        <label for="motivo">Motivo de contacto:</label>
+        <select name="motivo" id="motivo">
+            <option value="consulta">Consulta</option>
+            <option value="reclamo">Reclamo/queja</option>
+            <option value="sugerencia">Sugerencia</option>
+            <option value="opinion">Opinión</option>
+        </select>
+        <br>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" ></textarea>
+        <br>
+
+        <button type="submit">Enviar</button>
+    </form>
+       
+</body>
+</html>
