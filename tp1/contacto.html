@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="fondo-contacto">
     <header>
         <nav>
             <ul>
@@ -19,39 +19,62 @@
     </header>
     
 <main>
-  <h2>Contactanos!!</h2>
+  <h2>¡Contactanos!</h2>
     <p>¡Déjanos tu mensaje y nos pondremos en contacto a la brevedad!</p>
-    
-    
-        <form action="." method="get" class="formulario-contacto">
+ 
+<!--
+- Agrupé cada input y su label dentro de un <div> para que sea más fácil ordenarlos y aplicar estilos en el CSS.
+- Dejé la clase 'formulario-contacto' en el <form> para poder diseñarlo mejor después.
+- Saqué los <br> porque no son tan necesarios y es mejor manejar los espacios con CSS.
+- el contenido esta igual, solo mejoré la estructura para que se vea más prolijo y más fácil de modificar.-->
+
+    <form action="#" method="get" class="formulario-contacto">
+      <div class="campo">
         <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre" required/>
-        <br>
+        <input type="text" name="nombre" id="nombre" required placeholder="Escriba su nombre"/>
+      </div>
+    
+      <div class="campo">
         <label for="apellido">Apellido:</label>
-        <input type="text" name="apellido" id="apellido" required/>
-        <br>
+        <input type="text" name="apellido" id="apellido" required placeholder="Escriba su apellido"/>
+      </div>
+    
+      <div class="campo">
         <label for="email">Correo electrónico:</label>
-        <input type="email" name="email" id="email" required/>
-        <br>
-        <label for="celular">Celular(opcional):</label>
-        <input type="tel" id="celular" name="celular">
-        <br>
+        <input type="email" name="email" id="email" required placeholder="Ej: juan@mail.com"/>
+      </div>
+    
+      <div class="campo">
+        <label for="celular">Celular (opcional):</label>
+        <input type="tel" name="celular" id="celular" placeholder="Ej: 3884771326"/>
+      </div>
+    
+      <div class="campo">
         <label for="motivo">Motivo de contacto:</label>
         <select name="motivo" id="motivo">
-            <option value="consulta">Consulta</option>
-            <option value="reclamo">Reclamo/queja</option>
-            <option value="sugerencia">Sugerencia</option>
-            <option value="opinion">Opinión</option>
+          <option value="" disabled selected>Seleccionar</option>
+          <option value="consulta">Consulta</option>
+          <option value="reclamo">Reclamo/queja</option>
+          <option value="sugerencia">Sugerencia</option>
+          <option value="opinion">Opinión</option>
         </select>
-        <br>
+      </div>
+    
+      <div class="campo">
         <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="5" ></textarea>
-        <br>
-
+        <textarea name="mensaje" id="mensaje" rows="5" placeholder="Escribí tu mensaje aquí..."></textarea>
+      </div>
+    
+      <div class="boton">
         <button type="submit">Enviar</button>
+      </div>
     </form>
+    
+    
+        
        
 </main>
+
 
 
 <footer>
