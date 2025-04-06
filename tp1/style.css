@@ -9,6 +9,15 @@ body {
     color: #333;
     padding: 0;
   }
+  .MuseoBody{
+    min-height: calc(100vh - 100px);
+    background: linear-gradient(0deg,#001F3F, #EDE8D0);
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
   
   /* Nav */
   header {
@@ -87,7 +96,7 @@ body {
     min-height: 100vh;
   }
 
-.formulario-contacto {
+  .formulario-contacto {
   max-width: 600px;
   margin: 30px auto;
   padding: 20px;
