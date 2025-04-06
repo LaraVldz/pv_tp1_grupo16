@@ -1,0 +1,79 @@
+/* Fuente de Google */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: 'Noto Serif JP', serif;
+    background-color: #faf3ea;
+    color: #333;
+    padding: 0;
+  }
+  
+  /* Nav */
+  header {
+    background-color: #2e2e2e;
+    padding: 15px 0;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    margin: 0 15px;
+  }
+  
+  nav a {
+    display: inline-block; /* para que padding vertical funcione */
+    transition: all 0.3s ease;/* suaviza el cambio */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 8px;
+  }
+  
+  nav a:hover {
+    color: #648b60; /* verde bambú */
+    font-size: 1.1em; /* hace que se agrande un poco */
+  }
+  
+  /* Contenido principal */
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #2e2e2e;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /*Imagen del templo*/
+  .imagen {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .imagen img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .imagen p {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 8px;
+  }
