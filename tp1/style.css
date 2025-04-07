@@ -9,16 +9,6 @@ body {
     color: #333;
     padding: 0;
   }
-  .MuseoBody{
-    min-height: calc(100vh - 100px);
-    background: linear-gradient(0deg,#001F3F, #EDE8D0);
-    color: #333333;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-  }
-  
   /* Nav */
   header {
     background-color: #2e2e2e;
@@ -163,4 +153,14 @@ input:focus, textarea:focus, select:focus {
 ::placeholder {
   color: #aaa;
   font-style: italic;
+}
+/*Comienza Css de Museo*/
+.MuseoBody{
+  min-height: calc(100vh - 100px);
+  background: linear-gradient(0deg,#001F3F, #EDE8D0);
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
