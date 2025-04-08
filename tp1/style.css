@@ -89,7 +89,7 @@ body {
   
   nav a {
     display: inline-block; /* para que padding vertical funcione */
-    transition: all 0.3s ease;/* suaviza el cambio */
+    transition: all 0.3s ease;
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -97,7 +97,7 @@ body {
   }
   
   nav a:hover {
-    color: #648b60; /* verde bambú */
+    color: #648b60; 
     font-size: 1.1em; /* hace que se agrande un poco */
   }
   
@@ -137,6 +137,128 @@ body {
     color: #666;
     margin-top: 8px;
   }
+
+
+  /*agrego parrafo cultura */
+
+  .cultura {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .cultura h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #3b3b3b;
+  }
+  
+  .cultura p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  .cultura img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+/* agrego tarjetas*/
+
+  .galeria-cultural {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .galeria-cultural h2 {
+    font-size: 1.8em;
+    margin-bottom: 25px;
+    color: #3b3b3b;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    width: 250px;
+    text-align: center;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  .card p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .ir-a-museos {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .ir-a-museos p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .ir-a-museos a {
+    text-decoration: none;
+    background-color: #648b60;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .ir-a-museos a:hover {
+    background-color: #4a6d47;
+  }
+  
+  .ir-a-museos {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .ir-a-museos p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  .ir-a-museos a {
+    text-decoration: none;
+    background-color: #f8d1d1; 
+    color: #5c3d3d;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ir-a-museos a:hover {
+    background-color: #f3e1db; /* beige rosadito suave */
+  }
+  
+
 
   /*Formulario de CONTACTO*/
   body.fondo-contacto {
