@@ -1,5 +1,65 @@
 /* Fuente de Google */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap');
+/*Estilo del Inicio*/
+.FondoInicio {
+  min-height: calc(100vh - 100px);
+  background: 
+    linear-gradient(0deg, rgba(255, 183, 197, 0.3), rgba(255, 221, 225, 0.5)),
+    url('static/images/ImagenesMuseo/Fushimi_Inari_02.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333333;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.intro {
+  font-size: 25px;
+  font-weight: 600;
+}
+.Grupo16 {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  color: #333433;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* Subrayado que aparece al pasar el mouse */
+.Grupo16::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #333433;
+  transition: width 0.4s ease;
+}
+
+.Grupo16:hover {
+  color: #2a2a2a;
+  letter-spacing: 0.5px;
+}
+
+.Grupo16:hover::after {
+  width: 100%;
+}
+
+
+.Templo {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333433;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  min-height: 10px;
+}
+
 
 /* Estilos generales */
 body {
@@ -61,7 +121,7 @@ body {
   
   /*Imagen del templo*/
   .imagen {
-    margin-top: 40px;
+    margin-top: 10px;
     text-align: center;
   }
   
@@ -170,18 +230,21 @@ input:focus, textarea:focus, select:focus {
   padding: 0;
 }
 .TituloMuseo {
+  font-size: 35px;
   text-transform: uppercase;
   color: #333;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /*Le puse un sombreado*/
 }
 .PresentacionMuseo {
+  font-size: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #333;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2)
 }
 /*Empece a modificar los links dandole detalles*/
 .TituloLink a {
-  color: #2e2e2e;
+  font-size: 20px;
+  color: #fff8f2;
   text-decoration: none;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
@@ -196,6 +259,7 @@ input:focus, textarea:focus, select:focus {
   text-shadow: 0 0 5px #001F3F;
   cursor: pointer;
   transform: scale(1.1);
+  font-weight: bold;
 }
 /*agregue el hover para darle ese estilo al pasar el cursor*/
 
