@@ -30,7 +30,7 @@ body {
   
   nav a {
     display: inline-block; /* para que padding vertical funcione */
-    transition: all 0.3s ease;/* suaviza el cambio */
+    transition: all 0.3s ease;
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -38,7 +38,7 @@ body {
   }
   
   nav a:hover {
-    color: #648b60; /* verde bambú */
+    color: #648b60; 
     font-size: 1.1em; /* hace que se agrande un poco */
   }
   
